@@ -1,3 +1,6 @@
-var DomainCrawler = require("./domain_crawler");
+var DomainCrawler = require("./domain_crawler").DomainCrawler;
 
-DomainCrawler.crawlDomain("http://www.tamu.edu");
+var crawler = new DomainCrawler("http://www.tamu.edu");
+crawler.start(function() {
+    process.exit(0);
+});

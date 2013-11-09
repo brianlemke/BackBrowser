@@ -1,82 +1,92 @@
-exports.crawlDomain = crawlDomain;
+exports.DomainCrawler = DomainCrawler;
 
 var Crawler = require('Crawler').Crawler;
 var Url = require('url');
 
-var encountered_pages = new Array();
-var domains = new Array();
-
-var test_crawler = new Crawler({
-    "maxConnections" : 10,
-    "callback" : function(error, result, $) {
-        if (error)
-        {
-            logMessage("Error crawling: " + JSON.stringify(error));
+function DomainCrawler(domain_url) {
+    this.domain = domain_url;
+    this.encountered = new Array();
+    
+    var self = this;
+    
+    this.crawler = new Crawler({
+        "maxConnections" : 10,
+        "headers" : { "User-Agent" : "BackBrowserBot" },
+        "callback" : function(error, result, $) {
+            self.processPage(error, result, $);
+        },
+        "onDrain" : function() {
+            self.finishCallback();
         }
-        else
-        {
-            processPage(result, $);
-        }
-    },
-    "onDrain" : function() {
-        logMessage("===============================================");
-        logMessage("Finished crawling all domains");
-        logMessage("=================================================");
-    }
-});
-
-function normalizeUrl(url_string)
-{
-    var url = Url.parse(url_string);
-    var normal = url.protocol + "//" + url.host + url.path;
-    return normal;
+    });
 }
 
-function isNewDomainPage(url_string)
-{
-    var url = Url.parse(url_string);
-    var domain_name = url.protocol + "//" + url.hostname;
+DomainCrawler.prototype.processPage = function(error, result, $) {
+    if (error) {
+        this.log(JSON.serialize(error));
+    }
+    else {
+        this.log("Crawled page: " + result.uri)
+        
+        if ($) {
+            var self = this;
+            $("a").each(function (index, link) {
+                var linked_url = self.normalizeUrl(link.href);
+                if (self.isSameDomain(linked_url) && !self.isEncountered(linked_url)) {
+                    self.log("    Crawling link: " + linked_url);
+                    self.crawlPage(linked_url);
+                }
+            });
+        }
+    }
+};
+
+DomainCrawler.prototype.start = function(finish_callback) {
+    this.log("============================================================");
+    this.log("Starting to crawl domain " + this.domain);
+    this.log("============================================================");
     
-    if (domains.indexOf(domain_name) == -1)
-    {
+    var self = this;
+    this.finishCallback = function() {
+        self.log("============================================================");
+        self.log("Finished crawling domain " + self.domain);
+        self.log("============================================================");
+        
+        if (finish_callback) {
+            finish_callback();
+        }
+    };
+    
+    this.crawlPage(this.domain);
+};
+
+DomainCrawler.prototype.crawlPage = function(url_string) {
+    this.encountered.push(url_string);
+    this.crawler.queue(url_string);
+};
+
+DomainCrawler.prototype.normalizeUrl = function(url_string) {
+    var url = Url.parse(url_string);
+    var normalized = url.protocol + "//" + url.host + url.path;
+    return normalized;
+};
+
+DomainCrawler.prototype.isSameDomain = function(url_string) {
+    var url = Url.parse(url_string);
+    var url_domain = url.protocol + "//" + url.hostname;
+    
+    return url_domain == this.domain;
+};
+
+DomainCrawler.prototype.isEncountered = function(url_string) {
+    if (this.encountered.indexOf(url_string) == -1) {
         return false;
     }
-    else
-    {
-        return encountered_pages.indexOf(url_string) == -1;
+    else {
+        return true;
     }
-}
+};
 
-function crawlDomain(url)
-{
-    domains.push(url);
-    crawlPage(url);
-}
-
-function crawlPage(url)
-{
-    encountered_pages.push(url);
-    test_crawler.queue(url);
-}
-
-function processPage(result, $)
-{
-    logMessage("Crawled page: " + result.uri)
-    
-    if ($)
-    {
-        $("a").each(function (index, link) {
-            var linked_url = normalizeUrl(link.href);
-            if (isNewDomainPage(linked_url))
-            {
-                logMessage("   Crawling link: " + linked_url);
-                crawlPage(linked_url);
-            }
-        });
-    }
-}
-
-function logMessage(message)
-{
+DomainCrawler.prototype.log = function(message) {
     console.log("DomainCrawler | " + message);
-}
+};
