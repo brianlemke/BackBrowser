@@ -2,6 +2,7 @@ exports.Page = Page;
 exports.Domain = Domain;
 
 var fs = require('fs');
+var Url = require('url');
 
 function Page(url_string) {
     this.url = url_string;
@@ -55,10 +56,16 @@ Page.prototype.fromJSON = function(json) {
 function Domain(domain_string) {
     this.url = domain_string;
     this.pages = new Array();
+    
+    if (fs.existsSync(this.getFileName())) {
+        this.log("Loading domain representation from " + this.getFileName());
+        this.load(this.getFileName());
+    }
 }
 
 Domain.prototype.url = "";
 Domain.prototype.pages = null;
+Domain.prototype.last_crawled = new Date(0);
 
 Domain.prototype.addPage = function(page) {
     for (var i = 0; i < this.pages.length; i++) {
@@ -102,6 +109,7 @@ Domain.prototype.populateBackLinks = function() {
 Domain.prototype.toJSON = function() {
     var json = {}
     json["url"] = this.url;
+    json["last_crawled"] = this.last_crawled.toJSON();
     json["pages"] = new Array();
     for (var i = 0; i < this.pages.length; i++) {
         json["pages"].push(this.pages[i].toJSON());
@@ -112,6 +120,7 @@ Domain.prototype.toJSON = function() {
 
 Domain.prototype.fromJSON = function(json) {
     this.url = json["url"];
+    this.last_crawled = new Date(json["last_crawled"]);
     this.pages = new Array();
     for (var i = 0; i < json["pages"].length; i++) {
         var page = new Page();
@@ -120,20 +129,39 @@ Domain.prototype.fromJSON = function(json) {
     }
 };
 
-Domain.prototype.dump = function(file, callback) {
+Domain.prototype.getFileName = function() {
+    return Url.parse(this.url).hostname + ".json";
+};
+
+Domain.prototype.dump = function(callback) {
     var self = this;
-    fs.writeFile(file, JSON.stringify(this.toJSON(), null, 4), function(error) {
+    fs.writeFile(this.getFileName(), JSON.stringify(this.toJSON(), null, 4), function(error) {
        if (error) {
            self.log("Error dumping domain " + self.url + ": " + error);
        }
        else {
-           self.log("Finished dumping domain " + self.url + " to " + file);
+           self.log("Finished dumping domain " + self.url + " to " + this.getFileName());
        }
        
        if (callback) {
            callback();
        }
     });
+};
+
+Domain.prototype.load = function(file) {
+    var loaded = false;
+    
+    var data = fs.readFileSync(this.getFileName());
+    if (data) {
+        this.fromJSON(JSON.parse(data));
+        loaded = true;
+    }
+    else {
+        this.log("Error loading domain from " + file);
+    }
+    
+    return loaded;
 };
 
 Domain.prototype.log = function(message) {

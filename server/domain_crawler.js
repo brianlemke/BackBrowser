@@ -67,6 +67,7 @@ DomainCrawler.prototype.start = function(finish_callback) {
         self.log("============================================================");
         
         this.representation.populateBackLinks();
+        this.representation.last_crawled = new Date();
         
         this.representation.dump(Url.parse(self.domain).hostname + ".json", function() {
             if (finish_callback) {
@@ -103,6 +104,10 @@ DomainCrawler.prototype.isEncountered = function(url_string) {
     else {
         return true;
     }
+};
+
+DomainCrawler.prototype.timeSinceLastCrawl = function() {
+    return (new Date() - this.representation.last_crawled);
 };
 
 DomainCrawler.prototype.log = function(message) {
