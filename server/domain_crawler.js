@@ -56,6 +56,8 @@ DomainCrawler.prototype.processPage = function(error, result, $) {
 };
 
 DomainCrawler.prototype.start = function(finish_callback) {
+    this.encountered = new Array();
+    
     this.log("============================================================");
     this.log("Starting to crawl domain " + this.domain);
     this.log("============================================================");
@@ -69,7 +71,7 @@ DomainCrawler.prototype.start = function(finish_callback) {
         this.representation.populateBackLinks();
         this.representation.last_crawled = new Date();
         
-        this.representation.dump(Url.parse(self.domain).hostname + ".json", function() {
+        this.representation.dump(function() {
             if (finish_callback) {
                 finish_callback();
             }
@@ -108,6 +110,10 @@ DomainCrawler.prototype.isEncountered = function(url_string) {
 
 DomainCrawler.prototype.timeSinceLastCrawl = function() {
     return (new Date() - this.representation.last_crawled);
+};
+
+DomainCrawler.prototype.hasBeenCrawled = function() {
+    return this.representation.last_crawled > 0;
 };
 
 DomainCrawler.prototype.log = function(message) {
