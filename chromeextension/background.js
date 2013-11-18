@@ -13,12 +13,11 @@ function checkForValidUrl(tabId, changeInfo, tab) {
 };
 chrome.tabs.onUpdated.addListener(checkForValidUrl);
 // Listen for any changes to the URL of any tab.
-
-
-
+var count=0;
 var Backbrowser = {
     /** stores the json */
         linkjson:'',
+
     /**
      * Requests the JSON data from the server
      */
@@ -29,76 +28,206 @@ var Backbrowser = {
             this.showLinks();
 
         },
+        requestmoreLinks:function(){
+
+            /** linkjson= getdatafromserver() */
+            this.showmorelinks();
+
+        },
+        showmorelinks: function(header){
+            count=count+1;
+            var isthis=this;
+
+            for(var i=0;i<2;i++){
+            var a = header.nextSibling;
+            var b = document.createElement('h3');  /** add header*/
+            var c=  document.createElement('a');    /** create anchor  */
+            var curl = document.createTextNode('http://www.google2.com');   /**create the url */
+            c.appendChild(curl);
+            c.title = 'http://www.google.com';                             /**set the title */
+            c.href = 'http://www.google.com';                              /**set the URL */
+            b.appendChild(c);           /** add anchor to the header */
+            a.appendChild(b);           /** add header to the div 'acord' */
+
+
+            var d =document.createElement('div');  /** create the structure for accordion for the 2nd reading of in links*/
+            d.className='acord';
+            a.appendChild(d);
+            }
+            if(count!=2){
+            $(".acord").accordion({
+                header: ">h3",
+                heightStyle: "content",
+                active: false,
+                collapsible: true
+
+
+
+            });
+            }
+
+
+
+            $('.acord .acord h3').bind('click', function (e) {         /**bind clicks to the headers*/
+            // bind to the the header / anchor clicks
+            //e.stopPropagation();
+
+            var active =$(".acord").accordion("option","active");  /**get the active panel index*/
+            alert(active);
+                var header;
+
+                switch(active)                                       /**compare values of index*/
+                {
+                    case false:                                      /**if index is false, then send request to server*/
+                        alert("opening");
+                        isthis.showmorelinks(this);
+                        break;
+                    default:
+                        var header = $(".acord h3").eq(active);      /**if index is not false, then compare the values of the headers*/
+                        if(header[0]!==this){                        /**if header is not equal*/
+                        alert("opening");                       /**send request to server*/
+                        isthis.showmorelinks(this);
+                        }
+                }
+            });
+
+            $('.acord .acord h3 a').bind('click', function (e) {           /**bind clicks to the links*/
+                // bind to the the header / anchor clicks
+            e.stopPropagation();                                /**keep links from propogating and opening*/
+            var href = e.currentTarget.href;                    /**get the link*/
+            chrome.tabs.getSelected(null,function(tab) {
+                chrome.tabs.update(tab.id, {url: href});        /**update the current chrome tab with the new link*/
+                window.close();                                 // close the popup
+            });
+
+            });
+
+
+
+
+
+        },
     /**
      * Displays the data in html
      */
         showLinks: function () {
 
+            var isthis=this;
+
             chrome.tabs.query({'active': true, 'lastFocusedWindow': true}, function (tabs) {
-                var currentURL = "http://"+(tabs[0].url); /** gets the current URL the user is on */
 
-                var e = document.createElement('p');      /**creates paragraph in html, will display the in links*/
-                var etext=document.createTextNode("In Links");
-                e.appendChild(etext);
-                document.body.appendChild(e);
+                /** read in in_links*/
 
+                var inlinkheader = document.createElement('h2'); /** create the header for the initial reading in of in links*/
+                var inlinkheaderText = document.createTextNode("In links");//create the definition header text node.
+                inlinkheader.appendChild(inlinkheaderText);//stick the text node to the dlHeader.
+                document.body.appendChild(inlinkheader);//Add header to html.
 
-            for ( var i =0; i<2;i++){                    /**will iterate through the JSONs to display the links*/
-                var a = document.createElement('a');     /* anchor tag, creates the various links to be displayed */
-                var linkText = document.createTextNode(currentURL);
-                a.appendChild(linkText);
-                a.title = currentURL;
-                a.href = currentURL
-                document.body.appendChild(a);
-                var c = document.createElement('br');
-                document.body.appendChild(c);
-            }
-                var details=document.createElement('details');          /**in progress, currently trying to get a expand/collapse */
-                var summary=document.createElement('summary');
-                var p=document.createElement('p');
+                var a = document.createElement('div'); /** create the structure for accordion for the first reading of in links*/
+                a.className='acord';
+                document.body.appendChild(a);     /**add it to the html */
 
+                for(var i=0;i<2;i++)   {                /** test read 2 links in */
 
-
-
-                var k = document.createElement('a');
-                var linkText4 = document.createTextNode(currentURL);
-                k.appendChild(linkText4);
-                k.title = currentURL;
-                k.href = currentURL;
-                summary.appendChild(k);
-
-                var collink=document.createElement('a');
-                var linkText5 = document.createTextNode(currentURL);
-                collink.appendChild(linkText5);
-                collink.title = currentURL;
-                collink.href = currentURL;
-                p.appendChild(collink);
+                var b = document.createElement('h3');  /** add header*/
+                var c=  document.createElement('a');    /** create anchor  */
+                var curl = document.createTextNode('About Robots_'+ i.toString());   /**create the url */
+                c.appendChild(curl);
+                c.title = 'http://www.google.com';                             /**set the title */
+                c.href = 'http://www.google.com';                              /**set the URL */
+                  $(c).css("color", "#FFFFFF");
+                b.appendChild(c);           /** add anchor to the header */
+                a.appendChild(b);           /** add header to the div 'acord' */
 
 
-                details.appendChild(summary);
-                details.appendChild(p);
-
-                document.body.appendChild(details);                     /* end of tree structure testing */
-
-
-                var s = document.createElement('br');                   /*displays the out links, will also iterate through JSON */
-                document.body.appendChild(s);
-
-                var out = document.createElement('p');                  /**creates paragraph in html, will display the in links*/
-                var outtext=document.createTextNode("Out Links");
-                out.appendChild(outtext);
-                document.body.appendChild(out);
-
-                var f = document.createElement('a');                    /* anchor tag, creates the various links to be displayed */
-                var linkText3 = document.createTextNode(currentURL);
-                f.appendChild(linkText3);
-                f.title = currentURL;
-                f.href = currentURL;
-                document.body.appendChild(f);
+                var d =document.createElement('div');  /** create the structure for accordion for the 2nd reading of in links*/
+                d.className='acord';
+                a.appendChild(d);
 
 
 
+                }
 
+
+                var outlinkheader = document.createElement('h2'); /** create the header for the initial reading in of in links*/
+                var outlinkheaderText = document.createTextNode("Out links");//create the definition header text node.
+                outlinkheader.appendChild(outlinkheaderText);//stick the text node to the dlHeader.
+                document.body.appendChild(outlinkheader);//Add header to html.
+
+                var g = document.createElement('div'); /** create the structure for accordion for the first reading of in links*/
+                g.className='acord';
+                document.body.appendChild(g);     /**add it to the html */
+
+                for(var i=0;i<10;i++)   {                /** test read 2 links in */
+
+                var e = document.createElement('h3');  /** add header*/
+                var f=  document.createElement('a');    /** create anchor  */
+                var furl = document.createTextNode('Star trek episode '+ i.toString());   /**create the url */
+                $(f).css("color", "#FFFFFF");
+                f.appendChild(furl);
+                    f.title = 'http://entertainment.wikia.com/wiki/Star_Trek';                             /**set the title */
+                    f.href = 'http://entertainment.wikia.com/wiki/Star_Trek';                              /**set the URL */
+                    e.appendChild(f);           /** add anchor to the header */
+                    g.appendChild(e);           /** add header to the div 'acord' */
+
+
+                    var d =document.createElement('div');  /** create the structure for accordion for the 2nd reading of in links*/
+                    d.className='acord';
+                    g.appendChild(d);
+
+
+
+                }
+
+                var js = document.createElement("script");          /**dynamically calls the accordion script*/
+
+                js.type = "text/javascript";
+                js.src = "accordion.js";
+
+                document.body.appendChild(js);                      /**adds the call to html*/
+
+                $('.acord h3').bind('click', function (e) {        /**bind clicks to the headers*/
+                    // bind to the the header / anchor clicks
+                //e.stopPropagation();
+
+                var active =$(".acord").accordion("option","active");  /**get the active panel index*/
+                    alert(active);
+                var header;
+
+                   switch(active)                                       /**compare values of index*/
+                   {
+                       case false:                                      /**if index is false, then send request to server*/
+                           alert("opening");
+                           isthis.showmorelinks(this);
+                           break;
+                       default:
+                           var header = $(".acord h3").eq(active);      /**if index is not false, then compare the values of the headers*/
+                           if(header[0]!==this){                        /**if header is not equal*/
+                                alert("opening");                       /**send request to server*/
+                           isthis.showmorelinks(this);
+                           }
+                           }
+                });
+
+                $('.acord h3 a').bind('click', function (e) {           /**bind clicks to the links*/
+                    // bind to the the header / anchor clicks
+                    e.stopPropagation();                                /**keep links from propogating and opening*/
+                    var href = e.currentTarget.href;                    /**get the link*/
+                    chrome.tabs.getSelected(null,function(tab) {
+                        chrome.tabs.update(tab.id, {url: href});        /**update the current chrome tab with the new link*/
+                        window.close();                                 // close the popup
+                    });
+
+                });
+
+                /*.getElementsByTagName("A")[0].bind('click',function(e){
+
+
+                        recall("its still working");
+                        window.location = $(this).attr('href');
+                        return false;
+
+                });*/
             });
 
         }
@@ -109,7 +238,9 @@ var Backbrowser = {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    Backbrowser.requestLinks();
+
+
+    Backbrowser.requestLinks();  /**request the links */
 });
 
 
