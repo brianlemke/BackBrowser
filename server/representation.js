@@ -140,7 +140,7 @@ Domain.prototype.dump = function(callback) {
            self.log("Error dumping domain " + self.url + ": " + error);
        }
        else {
-           self.log("Finished dumping domain " + self.url + " to " + this.getFileName());
+           self.log("Finished dumping domain " + self.url + " to " + self.getFileName());
        }
        
        if (callback) {
