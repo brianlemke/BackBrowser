@@ -57,13 +57,13 @@ function Domain(domain_string) {
     this.url = domain_string;
     this.pages = new Array();
     
-    if (fs.existsSync(this.getFileName())) {
+    if (this.url && fs.existsSync(this.getFileName())) {
         this.log("Loading domain representation from " + this.getFileName());
         this.load(this.getFileName());
     }
 }
 
-Domain.prototype.url = "";
+Domain.prototype.url = null;
 Domain.prototype.pages = null;
 Domain.prototype.last_crawled = new Date(0);
 
