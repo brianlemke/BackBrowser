@@ -1,6 +1,6 @@
 exports.DomainCrawler = DomainCrawler;
 
-var Crawler = require('Crawler').Crawler;
+var Crawler = require('crawler').Crawler;
 var Url = require('url');
 var Representation = require('./representation');
 
