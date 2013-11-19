@@ -8,7 +8,10 @@ var Url = require('url');
 
 function DomainServer() {
     this.domains = new Array();
-    this.http_server = new Http.createServer(this.requestHandler);
+    var self = this;
+    this.http_server = new Http.createServer(function(request, response) {
+        self.requestHandler(request, response);
+    });
 }
 
 DomainServer.prototype.domains = null;
@@ -17,7 +20,7 @@ DomainServer.prototype.http_server = null;
 DomainServer.prototype.addOrUpdateDomain = function(domain) {
     // Update the domain if it already exists
     for (var i = 0; i < this.domains.length; i++) {
-        if (this.domains[i].url = domain.url) {
+        if (this.domains[i].url == domain.url) {
             this.domains[i] = domain;
             return;
         }
@@ -43,7 +46,7 @@ DomainServer.prototype.requestHandler = function(request, response) {
 
         var page_url = url.query["page_url"];
         if (page_url) {
-            var result = getPageResult(page_url);
+            var result = this.getPageResult(page_url);
             
             response.statusCode = 200;
             response.end(JSON.stringify(result, null, 4));
@@ -65,7 +68,7 @@ DomainServer.prototype.getPageResult = function(url) {
     var result = new Results.PageResult(url);
     
     for (var i = 0; i < this.domains.length; i++) {
-        var domain = this.domains.crawlers[i];
+        var domain = this.domains[i];
         
         var page = domain.getPage(url);
         if (page) {

@@ -33,6 +33,7 @@ function startNextCrawl() {
             });
         }
         else {
+            recordDomain(crawler.representation);
             stageNextCrawl(crawler);
         }
     }
