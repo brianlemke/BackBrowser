@@ -3,6 +3,7 @@ exports.DomainCrawler = DomainCrawler;
 var Crawler = require('crawler').Crawler;
 var Url = require('url');
 var Representation = require('./representation');
+var Ranker = require('./page_ranker');
 
 function DomainCrawler(domain_url) {
     this.domain = domain_url;
@@ -24,7 +25,7 @@ function DomainCrawler(domain_url) {
 
 DomainCrawler.prototype.domain = "";
 DomainCrawler.prototype.encountered = new Array();
-DomainCrawler.prototype.domain_representation = null;
+DomainCrawler.prototype.representation = null;
 
 DomainCrawler.prototype.processPage = function(error, result, $) {
     if (error) {
@@ -69,6 +70,7 @@ DomainCrawler.prototype.start = function(finish_callback) {
         self.log("============================================================");
         
         this.representation.populateBackLinks();
+        Ranker.rankPages(this.representation);
         this.representation.last_crawled = new Date();
         
         this.representation.dump(function() {

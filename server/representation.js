@@ -13,6 +13,7 @@ function Page(url_string) {
 Page.prototype.url = "";
 Page.prototype.in_links = null;
 Page.prototype.out_links = null;
+Page.prototype.page_rank = null;
 
 Page.prototype.addOutLink = function(link_url) {
     for (var i = 0; i < this.out_links.length; i++) {
@@ -43,6 +44,7 @@ Page.prototype.toJSON = function() {
     json["url"] = this.url;
     json["in_links"] = this.in_links;
     json["out_links"] = this.out_links;
+    json["page_rank"] = this.page_rank;
     
     return json
 };
@@ -51,6 +53,7 @@ Page.prototype.fromJSON = function(json) {
     this.url = json["url"];
     this.in_links = json["in_links"];
     this.out_links = json["out_links"];
+    this.page_rank = json["page_rank"];
 };
 
 function Domain(domain_string) {
