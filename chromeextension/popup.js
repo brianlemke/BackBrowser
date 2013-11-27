@@ -95,7 +95,7 @@ var Backbrowser = {
 
         $('.acord .acord h3').bind('click', function (e) {         /**bind clicks to the headers*/
         // bind to the the header / anchor clicks
-        //e.stopPropagation();
+        e.stopPropagation();
 
         var active =$(".acord").accordion("option","active");  /**get the active panel index*/
         // alert(active);
@@ -215,25 +215,27 @@ var Backbrowser = {
 
             $('.acord h3').bind('click', function (e) {        /**bind clicks to the headers*/
             // bind to the the header / anchor clicks
-            //e.stopPropagation();
+            e.stopPropagation();
 
-            var active =$(".acord").accordion("option","active");  /**get the active panel index*/
+            //var active =$(".acord").accordion("option","active");  /**get the active panel index*/
             //    alert(active);
-            var header;
+            //var header;
 
-                switch(active)                                       /**compare values of index*/
-                {
-                    case false:                                      /**if index is false, then send request to server*/
-                    alert("opening");
-                        isthis.showmorelinks(this);
-                        break;
-                    default:
-                        var header = $(".acord h3").eq(active);      /**if index is not false, then compare the values of the headers*/
-                        if(header[0]!==this){                        /**if header is not equal*/
-                        alert("opening");                       /**send request to server*/
-                        isthis.showmorelinks(this);
-                        }
-                }
+
+
+               // switch(active)                                       /**compare values of index*/
+                //{
+                  //  case false:                                      /**if index is false, then send request to server*/
+                   // alert("opening");
+                     //   isthis.showmorelinks(this);
+                      //  break;
+                    //default:
+                      //  var header = $(".acord h3").eq(active);      /**if index is not false, then compare the values of the headers*/
+                       // if(header[0]!==this){                        /**if header is not equal*/
+                        //alert("opening");                       /**send request to server*/
+                        //isthis.showmorelinks(this);
+                        //}
+                //}
             });
 
             $('.acord h3 a').bind('click', function (e) {           /**bind clicks to the links*/
