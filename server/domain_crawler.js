@@ -50,14 +50,21 @@ DomainCrawler.prototype.processPage = function(error, result, $) {
                 var linked_url = self.normalizeUrl(link.href);
                 
                 if (self.isSameDomain(linked_url)) {
-                    // Make sure the site's robots.txt allows us to crawl this
                     if (!self.isEncountered(linked_url)) {
                         self.encountered.push(linked_url);
                         
                         if (self.isAllowedPage(linked_url)) {
                             page.addOutLink(linked_url);
-                            self.log("    Crawling link: " + linked_url);
-                            self.crawlPage(linked_url);
+                            
+                            if (self.isHtml(linked_url)) {
+                                self.log("    Crawling link: " + linked_url);
+                                self.crawlPage(linked_url);
+                            }
+                            else {
+                                self.log("    Not crawling binary: " + linked_url);
+                                var binary_page = new Representation.Page(linked_url);
+                                self.representation.addPage(binary_page);
+                            }
                         }
                         else {
                             self.log("    Denied crawl: " + linked_url);
@@ -150,6 +157,19 @@ DomainCrawler.prototype.isAllowedPage = function(url_string) {
        // Always allow the page if we don't have a robots.txt parser
        return true;
    }
+};
+
+DomainCrawler.prototype.isHtml = function(url_string) {
+    // For now, just ignore all images and say everything else is HTML
+    var jpg = /\.jpg$|\.JPG$|\.jpeg$|\.JPEG$/;
+    var png = /\.png$|\.PNG$/;
+    var gif = /\.gif$|\.GIF$/;
+    
+    if (jpg.test(url_string) || png.test(url_string) || gif.test(url_string)) {
+        return false;
+    } else {
+        return true;
+    }
 };
 
 DomainCrawler.prototype.timeSinceLastCrawl = function() {
