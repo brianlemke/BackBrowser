@@ -28,17 +28,19 @@ function DomainCrawler(domain_url) {
 
 DomainCrawler.prototype.user_agent = "";
 DomainCrawler.prototype.domain = "";
+DomainCrawler.prototype.num_queued = 0;
 DomainCrawler.prototype.encountered = new Array();
 DomainCrawler.prototype.representation = null;
 DomainCrawler.prototype.robot_checker = null;
 
 DomainCrawler.prototype.processPage = function(error, result, $) {
+    this.num_queued--;
+    
     if (error) {
         this.log(error);
     }
     else {
-        var num_left = this.encountered.length;
-        this.log("Crawled page: " + result.uri + " (" + num_left + ")");
+        this.log("Crawled page: " + result.uri + " (" + this.num_queued + ")");
         
         var page = new Representation.Page(result.uri);
         
@@ -114,12 +116,13 @@ DomainCrawler.prototype.start = function(finish_callback) {
 };
 
 DomainCrawler.prototype.crawlPage = function(url_string) {
+    this.num_queued++;
     this.crawler.queue(url_string);
 };
 
 DomainCrawler.prototype.normalizeUrl = function(url_string) {
     var url = Url.parse(url_string);
-    var normalized = url.protocol + "//" + url.host + url.path;
+    var normalized = url.protocol + "//" + url.host + url.pathname;
     return normalized;
 };
 
