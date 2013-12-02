@@ -50,7 +50,12 @@ DomainCrawler.prototype.processPage = function(error, result, $) {
                 var linked_url = self.normalizeUrl(link.href);
                 
                 if (self.isSameDomain(linked_url)) {
-                    if (!self.isEncountered(linked_url)) {
+                    if (self.isEncountered(linked_url)) {
+                        if (self.isAllowedPage(linked_url)) {
+                            page.addOutLink(linked_url);
+                        }
+                    }
+                    else {
                         self.encountered.push(linked_url);
                         
                         if (self.isAllowedPage(linked_url)) {
