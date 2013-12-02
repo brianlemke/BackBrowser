@@ -3,7 +3,8 @@
     "description": "Tool for intra-domain reverse link browsing",
     "version": "0.0.01",
     "dependencies": {
-        "crawler": "0.2.5"
+        "crawler": "0.2.5",
+        "robots": "0.9.2"
     },
     "engines": {
         "node": "0.10.x",
