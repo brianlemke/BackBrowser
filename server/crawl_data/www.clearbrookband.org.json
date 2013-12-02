@@ -1,0 +1,313 @@
+{
+    "url": "http://www.clearbrookband.org",
+    "last_crawled": "2013-12-02T08:42:12.810Z",
+    "pages": [
+        {
+            "url": "http://www.clearbrookband.org",
+            "in_links": [],
+            "out_links": [
+                "http://www.clearbrookband.org/",
+                "http://www.clearbrookband.org/calendar/",
+                "http://www.clearbrookband.org/forms/",
+                "http://www.clearbrookband.org/about/",
+                "http://www.clearbrookband.org/links.php",
+                "http://www.clearbrookband.org/sponsors.php",
+                "http://www.clearbrookband.org/forms/Clear_Brook_Band_Schedule_2013.pdf",
+                "http://www.clearbrookband.org/forms/kroger_fundraising_info.pdf",
+                "http://www.clearbrookband.org/forms/membership_form_2012_2013.pdf",
+                "http://www.clearbrookband.org/paypal.php"
+            ],
+            "page_rank": 0.0029411764705882353
+        },
+        {
+            "url": "http://www.clearbrookband.org/",
+            "in_links": [
+                "http://www.clearbrookband.org"
+            ],
+            "out_links": [],
+            "page_rank": 0.0032058823529411765
+        },
+        {
+            "url": "http://www.clearbrookband.org/forms/",
+            "in_links": [
+                "http://www.clearbrookband.org"
+            ],
+            "out_links": [
+                "http://www.clearbrookband.org/forms/expensereport2008.pdf",
+                "http://www.clearbrookband.org/forms/FFAC_EXHIBIT_administration_of_medication_at_school_form_10-22-10.pdf",
+                "http://www.clearbrookband.org/forms/ParentConsent.pdf",
+                "http://www.clearbrookband.org/forms/Membership_form_2013_2014.pdf",
+                "http://www.clearbrookband.org/forms/Equipment_order_form_2013.pdf",
+                "http://www.clearbrookband.org/forms/recipes.pdf",
+                "http://www.clearbrookband.org/forms/incomereport2009.pdf",
+                "http://www.clearbrookband.org/forms/AltTransport.pdf",
+                "http://www.clearbrookband.org/forms/Randalls_Application_with_code.pdf",
+                "http://www.clearbrookband.org/forms/Band_Recycling_Flyer_April_2013.pdf",
+                "http://www.clearbrookband.org/forms/CBHS_Photo_form_2012.pdf",
+                "http://www.clearbrookband.org/forms/Band_Marching_Tips.pdf",
+                "http://www.clearbrookband.org/forms/senior_bios_info_2013.pdf",
+                "http://www.clearbrookband.org/forms/2013_CBBandScholarshipForm.pdf"
+            ],
+            "page_rank": 0.0032058823529411765
+        },
+        {
+            "url": "http://www.clearbrookband.org/links.php",
+            "in_links": [
+                "http://www.clearbrookband.org"
+            ],
+            "out_links": [],
+            "page_rank": 0.0032058823529411765
+        },
+        {
+            "url": "http://www.clearbrookband.org/calendar/",
+            "in_links": [
+                "http://www.clearbrookband.org"
+            ],
+            "out_links": [],
+            "page_rank": 0.0032058823529411765
+        },
+        {
+            "url": "http://www.clearbrookband.org/sponsors.php",
+            "in_links": [
+                "http://www.clearbrookband.org"
+            ],
+            "out_links": [
+                "http://www.clearbrookband.org/david@rackman.net",
+                "http://www.clearbrookband.org/forms/CBHS_MB_Sponsorship_Program_for_2010-2011.pdf"
+            ],
+            "page_rank": 0.0032058823529411765
+        },
+        {
+            "url": "http://www.clearbrookband.org/paypal.php",
+            "in_links": [
+                "http://www.clearbrookband.org"
+            ],
+            "out_links": [],
+            "page_rank": 0.0032058823529411765
+        },
+        {
+            "url": "http://www.clearbrookband.org/forms/membership_form_2012_2013.pdf",
+            "in_links": [
+                "http://www.clearbrookband.org"
+            ],
+            "out_links": [],
+            "page_rank": 0.0032058823529411765
+        },
+        {
+            "url": "http://www.clearbrookband.org/forms/Clear_Brook_Band_Schedule_2013.pdf",
+            "in_links": [
+                "http://www.clearbrookband.org"
+            ],
+            "out_links": [],
+            "page_rank": 0.0032058823529411765
+        },
+        {
+            "url": "http://www.clearbrookband.org/forms/kroger_fundraising_info.pdf",
+            "in_links": [
+                "http://www.clearbrookband.org"
+            ],
+            "out_links": [],
+            "page_rank": 0.0032058823529411765
+        },
+        {
+            "url": "http://www.clearbrookband.org/forms/AltTransport.pdf",
+            "in_links": [
+                "http://www.clearbrookband.org/forms/"
+            ],
+            "out_links": [],
+            "page_rank": 0.003147268907563025
+        },
+        {
+            "url": "http://www.clearbrookband.org/forms/FFAC_EXHIBIT_administration_of_medication_at_school_form_10-22-10.pdf",
+            "in_links": [
+                "http://www.clearbrookband.org/forms/"
+            ],
+            "out_links": [],
+            "page_rank": 0.003147268907563025
+        },
+        {
+            "url": "http://www.clearbrookband.org/forms/ParentConsent.pdf",
+            "in_links": [
+                "http://www.clearbrookband.org/forms/"
+            ],
+            "out_links": [],
+            "page_rank": 0.003147268907563025
+        },
+        {
+            "url": "http://www.clearbrookband.org/forms/Membership_form_2013_2014.pdf",
+            "in_links": [
+                "http://www.clearbrookband.org/forms/"
+            ],
+            "out_links": [],
+            "page_rank": 0.003147268907563025
+        },
+        {
+            "url": "http://www.clearbrookband.org/about/",
+            "in_links": [
+                "http://www.clearbrookband.org"
+            ],
+            "out_links": [
+                "http://www.clearbrookband.org/about/booster_club.php",
+                "http://www.clearbrookband.org/about/directors.php",
+                "http://www.clearbrookband.org/about/faqs.php",
+                "http://www.clearbrookband.org/about/past_shows.php",
+                "http://www.clearbrookband.org/about/early_years.php",
+                "http://www.clearbrookband.org/about/recent_past.php",
+                "http://www.clearbrookband.org/forms/CBBBC%20Bylaws_revised%20Mar%202013.pdf"
+            ],
+            "page_rank": 0.0032058823529411765
+        },
+        {
+            "url": "http://www.clearbrookband.org/forms/expensereport2008.pdf",
+            "in_links": [
+                "http://www.clearbrookband.org/forms/"
+            ],
+            "out_links": [],
+            "page_rank": 0.003147268907563025
+        },
+        {
+            "url": "http://www.clearbrookband.org/forms/Equipment_order_form_2013.pdf",
+            "in_links": [
+                "http://www.clearbrookband.org/forms/"
+            ],
+            "out_links": [],
+            "page_rank": 0.003147268907563025
+        },
+        {
+            "url": "http://www.clearbrookband.org/forms/incomereport2009.pdf",
+            "in_links": [
+                "http://www.clearbrookband.org/forms/"
+            ],
+            "out_links": [],
+            "page_rank": 0.003147268907563025
+        },
+        {
+            "url": "http://www.clearbrookband.org/forms/recipes.pdf",
+            "in_links": [
+                "http://www.clearbrookband.org/forms/"
+            ],
+            "out_links": [],
+            "page_rank": 0.003147268907563025
+        },
+        {
+            "url": "http://www.clearbrookband.org/forms/Randalls_Application_with_code.pdf",
+            "in_links": [
+                "http://www.clearbrookband.org/forms/"
+            ],
+            "out_links": [],
+            "page_rank": 0.003147268907563025
+        },
+        {
+            "url": "http://www.clearbrookband.org/forms/2013_CBBandScholarshipForm.pdf",
+            "in_links": [
+                "http://www.clearbrookband.org/forms/"
+            ],
+            "out_links": [],
+            "page_rank": 0.003147268907563025
+        },
+        {
+            "url": "http://www.clearbrookband.org/david@rackman.net",
+            "in_links": [
+                "http://www.clearbrookband.org/sponsors.php"
+            ],
+            "out_links": [],
+            "page_rank": 0.004383823529411765
+        },
+        {
+            "url": "http://www.clearbrookband.org/forms/senior_bios_info_2013.pdf",
+            "in_links": [
+                "http://www.clearbrookband.org/forms/"
+            ],
+            "out_links": [],
+            "page_rank": 0.003147268907563025
+        },
+        {
+            "url": "http://www.clearbrookband.org/forms/Band_Recycling_Flyer_April_2013.pdf",
+            "in_links": [
+                "http://www.clearbrookband.org/forms/"
+            ],
+            "out_links": [],
+            "page_rank": 0.003147268907563025
+        },
+        {
+            "url": "http://www.clearbrookband.org/forms/CBHS_Photo_form_2012.pdf",
+            "in_links": [
+                "http://www.clearbrookband.org/forms/"
+            ],
+            "out_links": [],
+            "page_rank": 0.003147268907563025
+        },
+        {
+            "url": "http://www.clearbrookband.org/about/booster_club.php",
+            "in_links": [
+                "http://www.clearbrookband.org/about/"
+            ],
+            "out_links": [],
+            "page_rank": 0.003353361344537815
+        },
+        {
+            "url": "http://www.clearbrookband.org/forms/CBHS_MB_Sponsorship_Program_for_2010-2011.pdf",
+            "in_links": [
+                "http://www.clearbrookband.org/sponsors.php"
+            ],
+            "out_links": [],
+            "page_rank": 0.004383823529411765
+        },
+        {
+            "url": "http://www.clearbrookband.org/about/directors.php",
+            "in_links": [
+                "http://www.clearbrookband.org/about/"
+            ],
+            "out_links": [],
+            "page_rank": 0.003353361344537815
+        },
+        {
+            "url": "http://www.clearbrookband.org/about/past_shows.php",
+            "in_links": [
+                "http://www.clearbrookband.org/about/"
+            ],
+            "out_links": [],
+            "page_rank": 0.003353361344537815
+        },
+        {
+            "url": "http://www.clearbrookband.org/about/early_years.php",
+            "in_links": [
+                "http://www.clearbrookband.org/about/"
+            ],
+            "out_links": [],
+            "page_rank": 0.003353361344537815
+        },
+        {
+            "url": "http://www.clearbrookband.org/about/faqs.php",
+            "in_links": [
+                "http://www.clearbrookband.org/about/"
+            ],
+            "out_links": [],
+            "page_rank": 0.003353361344537815
+        },
+        {
+            "url": "http://www.clearbrookband.org/about/recent_past.php",
+            "in_links": [
+                "http://www.clearbrookband.org/about/"
+            ],
+            "out_links": [],
+            "page_rank": 0.003353361344537815
+        },
+        {
+            "url": "http://www.clearbrookband.org/forms/CBBBC%20Bylaws_revised%20Mar%202013.pdf",
+            "in_links": [
+                "http://www.clearbrookband.org/about/"
+            ],
+            "out_links": [],
+            "page_rank": 0.003353361344537815
+        },
+        {
+            "url": "http://www.clearbrookband.org/forms/Band_Marching_Tips.pdf",
+            "in_links": [
+                "http://www.clearbrookband.org/forms/"
+            ],
+            "out_links": [],
+            "page_rank": 0.003147268907563025
+        }
+    ]
+}

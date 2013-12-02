@@ -1,0 +1,1215 @@
+{
+    "url": "http://www.tamu.edu",
+    "last_crawled": "2013-12-02T08:42:08.503Z",
+    "pages": [
+        {
+            "url": "http://www.tamu.edu",
+            "in_links": [],
+            "out_links": [
+                "http://www.tamu.edu/current-students/index.html",
+                "http://www.tamu.edu/",
+                "http://www.tamu.edu/about/index.html",
+                "http://www.tamu.edu/academics/index.html",
+                "http://www.tamu.edu/admissions/index.html",
+                "http://www.tamu.edu/athletics/index.html",
+                "http://www.tamu.edu/international/index.html",
+                "http://www.tamu.edu/research/index.html",
+                "http://www.tamu.edu/student-life/index.html",
+                "http://www.tamu.edu/contact-us/index.html",
+                "http://www.tamu.edu/future-students/index.html",
+                "http://www.tamu.edu/parents/index.html",
+                "http://www.tamu.edu/index.html",
+                "http://www.tamu.edu/former-students/index.html",
+                "http://www.tamu.edu/faculties/index.html",
+                "http://www.tamu.edu/staff/index.html",
+                "http://www.tamu.edu/about/facts/faq.html",
+                "http://www.tamu.edu/about/departments.html",
+                "http://www.tamu.edu/about/top-programs.html",
+                "http://www.tamu.edu/about/employment.html",
+                "http://www.tamu.edu/emergency/index.html",
+                "http://www.tamu.edu/statements/trademark.html",
+                "http://www.tamu.edu/statements/index.html",
+                "http://www.tamu.edu/statements/site.html"
+            ],
+            "page_rank": 0.0007575757575757576
+        },
+        {
+            "url": "http://www.tamu.edu/about/index.html",
+            "in_links": [
+                "http://www.tamu.edu"
+            ],
+            "out_links": [
+                "http://www.tamu.edu/about/campus-life.html",
+                "http://www.tamu.edu/about/facts/",
+                "http://www.tamu.edu/statements/mission.html",
+                "http://www.tamu.edu/statements/accreditation.html",
+                "http://www.tamu.edu/about/traditions.html",
+                "http://www.tamu.edu/about/coreValues.html",
+                "http://www.tamu.edu/about/diversity.html",
+                "http://www.tamu.edu/about/facts/history.html",
+                "http://www.tamu.edu/about/facts/branchCampuses.html",
+                "http://www.tamu.edu/about/academicUnits.html",
+                "http://www.tamu.edu/about/governance.html",
+                "http://www.tamu.edu/statements/",
+                "http://www.tamu.edu/statements/fileTypes.html",
+                "http://www.tamu.edu/about/recognitions.html"
+            ],
+            "page_rank": 0.0007859848484848485
+        },
+        {
+            "url": "http://www.tamu.edu/academics/index.html",
+            "in_links": [
+                "http://www.tamu.edu"
+            ],
+            "out_links": [
+                "http://www.tamu.edu/faculties/directory.html"
+            ],
+            "page_rank": 0.0007859848484848485
+        },
+        {
+            "url": "http://www.tamu.edu/admissions/index.html",
+            "in_links": [
+                "http://www.tamu.edu"
+            ],
+            "out_links": [
+                "http://www.tamu.edu/services/financial.html",
+                "http://www.tamu.edu/future-students/new-student-programs.html"
+            ],
+            "page_rank": 0.0007859848484848485
+        },
+        {
+            "url": "http://www.tamu.edu/athletics/index.html",
+            "in_links": [
+                "http://www.tamu.edu"
+            ],
+            "out_links": [],
+            "page_rank": 0.0007859848484848485
+        },
+        {
+            "url": "http://www.tamu.edu/international/index.html",
+            "in_links": [
+                "http://www.tamu.edu"
+            ],
+            "out_links": [],
+            "page_rank": 0.0007859848484848485
+        },
+        {
+            "url": "http://www.tamu.edu/research/index.html",
+            "in_links": [
+                "http://www.tamu.edu"
+            ],
+            "out_links": [],
+            "page_rank": 0.0007859848484848485
+        },
+        {
+            "url": "http://www.tamu.edu/index.html",
+            "in_links": [
+                "http://www.tamu.edu"
+            ],
+            "out_links": [],
+            "page_rank": 0.0007859848484848485
+        },
+        {
+            "url": "http://www.tamu.edu/",
+            "in_links": [
+                "http://www.tamu.edu"
+            ],
+            "out_links": [],
+            "page_rank": 0.0007859848484848485
+        },
+        {
+            "url": "http://www.tamu.edu/student-life/index.html",
+            "in_links": [
+                "http://www.tamu.edu"
+            ],
+            "out_links": [
+                "http://www.tamu.edu/about/arts.html",
+                "http://www.tamu.edu/academics/",
+                "http://www.tamu.edu/services/"
+            ],
+            "page_rank": 0.0007859848484848485
+        },
+        {
+            "url": "http://www.tamu.edu/contact-us/index.html",
+            "in_links": [
+                "http://www.tamu.edu"
+            ],
+            "out_links": [
+                "http://www.tamu.edu/contact-us/emergency-services.html"
+            ],
+            "page_rank": 0.0007859848484848485
+        },
+        {
+            "url": "http://www.tamu.edu/future-students/index.html",
+            "in_links": [
+                "http://www.tamu.edu"
+            ],
+            "out_links": [
+                "http://www.tamu.edu/admissions/",
+                "http://www.tamu.edu/student-life/"
+            ],
+            "page_rank": 0.0007859848484848485
+        },
+        {
+            "url": "http://www.tamu.edu/parents/index.html",
+            "in_links": [
+                "http://www.tamu.edu"
+            ],
+            "out_links": [
+                "http://www.tamu.edu/future-students/",
+                "http://www.tamu.edu/emergency/"
+            ],
+            "page_rank": 0.0007859848484848485
+        },
+        {
+            "url": "http://www.tamu.edu/current-students/index.html",
+            "in_links": [
+                "http://www.tamu.edu"
+            ],
+            "out_links": [],
+            "page_rank": 0.0007859848484848485
+        },
+        {
+            "url": "http://www.tamu.edu/former-students/index.html",
+            "in_links": [
+                "http://www.tamu.edu"
+            ],
+            "out_links": [
+                "http://www.tamu.edu/athletics/"
+            ],
+            "page_rank": 0.0007859848484848485
+        },
+        {
+            "url": "http://www.tamu.edu/staff/index.html",
+            "in_links": [
+                "http://www.tamu.edu"
+            ],
+            "out_links": [
+                "http://www.tamu.edu/contact-us/"
+            ],
+            "page_rank": 0.0007859848484848485
+        },
+        {
+            "url": "http://www.tamu.edu/faculties/index.html",
+            "in_links": [
+                "http://www.tamu.edu"
+            ],
+            "out_links": [
+                "http://www.tamu.edu/research/"
+            ],
+            "page_rank": 0.0007859848484848485
+        },
+        {
+            "url": "http://www.tamu.edu/about/facts/faq.html",
+            "in_links": [
+                "http://www.tamu.edu"
+            ],
+            "out_links": [],
+            "page_rank": 0.0007859848484848485
+        },
+        {
+            "url": "http://www.tamu.edu/about/departments.html",
+            "in_links": [
+                "http://www.tamu.edu"
+            ],
+            "out_links": [],
+            "page_rank": 0.0007859848484848485
+        },
+        {
+            "url": "http://www.tamu.edu/about/top-programs.html",
+            "in_links": [
+                "http://www.tamu.edu"
+            ],
+            "out_links": [],
+            "page_rank": 0.0007859848484848485
+        },
+        {
+            "url": "http://www.tamu.edu/emergency/index.html",
+            "in_links": [
+                "http://www.tamu.edu"
+            ],
+            "out_links": [
+                "http://www.tamu.edu/emergency/resources/faculty.html",
+                "http://www.tamu.edu/emergency/resources/plans.html",
+                "http://www.tamu.edu/emergency/communications/index.html",
+                "http://www.tamu.edu/emergency/resources/training-opportunities.html",
+                "http://www.tamu.edu/emergency/resources/frequently-asked-questions-faqs.html",
+                "http://www.tamu.edu/emergency/resources/index.html",
+                "http://www.tamu.edu/emergency/resources/students.html",
+                "http://www.tamu.edu/emergency/procedures/index.html",
+                "http://www.tamu.edu/emergency/resources/visitors.html",
+                "http://www.tamu.edu/emergency/resources/links.html",
+                "http://www.tamu.edu/emergency/resources/external-links.html",
+                "http://www.tamu.edu/emergency/procedures/severeWeather.html",
+                "http://www.tamu.edu/emergency/procedures/medical.html",
+                "http://www.tamu.edu/emergency/procedures/fire.html",
+                "http://www.tamu.edu/emergency/procedures/personalSafety.html"
+            ],
+            "page_rank": 0.0007859848484848485
+        },
+        {
+            "url": "http://www.tamu.edu/statements/trademark.html",
+            "in_links": [
+                "http://www.tamu.edu"
+            ],
+            "out_links": [],
+            "page_rank": 0.0007859848484848485
+        },
+        {
+            "url": "http://www.tamu.edu/about/employment.html",
+            "in_links": [
+                "http://www.tamu.edu"
+            ],
+            "out_links": [],
+            "page_rank": 0.0007859848484848485
+        },
+        {
+            "url": "http://www.tamu.edu/statements/index.html",
+            "in_links": [
+                "http://www.tamu.edu"
+            ],
+            "out_links": [
+                "http://www.tamu.edu/statements/compactWithTexans.html",
+                "http://www.tamu.edu/statements/privacy.html",
+                "http://www.tamu.edu/statements/linking.html"
+            ],
+            "page_rank": 0.0007859848484848485
+        },
+        {
+            "url": "http://www.tamu.edu/statements/site.html",
+            "in_links": [
+                "http://www.tamu.edu"
+            ],
+            "out_links": [],
+            "page_rank": 0.0007859848484848485
+        },
+        {
+            "url": "http://www.tamu.edu/about/facts/history.html",
+            "in_links": [
+                "http://www.tamu.edu/about/index.html"
+            ],
+            "out_links": [
+                "http://www.tamu.edu/about/facts/index.html"
+            ],
+            "page_rank": 0.000808103354978355
+        },
+        {
+            "url": "http://www.tamu.edu/statements/mission.html",
+            "in_links": [
+                "http://www.tamu.edu/about/index.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.000808103354978355
+        },
+        {
+            "url": "http://www.tamu.edu/about/facts/",
+            "in_links": [
+                "http://www.tamu.edu/about/index.html"
+            ],
+            "out_links": [
+                "http://www.tamu.edu/about/facts/academics.html",
+                "http://www.tamu.edu/about/facts/athletics.html",
+                "http://www.tamu.edu/about/facts/community.html",
+                "http://www.tamu.edu/about/facts/faculty.html",
+                "http://www.tamu.edu/about/facts/graduateStudies.html",
+                "http://www.tamu.edu/about/facts/international.html",
+                "http://www.tamu.edu/about/facts/research.html",
+                "http://www.tamu.edu/about/facts/resources.html",
+                "http://www.tamu.edu/about/facts/students.html",
+                "http://www.tamu.edu/about/facts/traditions.html"
+            ],
+            "page_rank": 0.000808103354978355
+        },
+        {
+            "url": "http://www.tamu.edu/statements/accreditation.html",
+            "in_links": [
+                "http://www.tamu.edu/about/index.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.000808103354978355
+        },
+        {
+            "url": "http://www.tamu.edu/about/diversity.html",
+            "in_links": [
+                "http://www.tamu.edu/about/index.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.000808103354978355
+        },
+        {
+            "url": "http://www.tamu.edu/about/campus-life.html",
+            "in_links": [
+                "http://www.tamu.edu/about/index.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.000808103354978355
+        },
+        {
+            "url": "http://www.tamu.edu/about/coreValues.html",
+            "in_links": [
+                "http://www.tamu.edu/about/index.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.000808103354978355
+        },
+        {
+            "url": "http://www.tamu.edu/about/facts/branchCampuses.html",
+            "in_links": [
+                "http://www.tamu.edu/about/index.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.000808103354978355
+        },
+        {
+            "url": "http://www.tamu.edu/images/traditions/large/12th_man.jpg",
+            "in_links": [
+                "http://www.tamu.edu/about/traditions.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.0008181835091991342
+        },
+        {
+            "url": "http://www.tamu.edu/images/traditions/large/reveille.jpg",
+            "in_links": [
+                "http://www.tamu.edu/about/traditions.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.0008181835091991342
+        },
+        {
+            "url": "http://www.tamu.edu/images/traditions/large/yell_leaders.jpg",
+            "in_links": [
+                "http://www.tamu.edu/about/traditions.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.0008181835091991342
+        },
+        {
+            "url": "http://www.tamu.edu/images/traditions/large/corps.jpg",
+            "in_links": [
+                "http://www.tamu.edu/about/traditions.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.0008181835091991342
+        },
+        {
+            "url": "http://www.tamu.edu/images/traditions/large/aggie_ring.jpg",
+            "in_links": [
+                "http://www.tamu.edu/about/traditions.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.0008181835091991342
+        },
+        {
+            "url": "http://www.tamu.edu/images/traditions/large/band_t.jpg",
+            "in_links": [
+                "http://www.tamu.edu/about/traditions.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.0008181835091991342
+        },
+        {
+            "url": "http://www.tamu.edu/images/traditions/large/big_event.jpg",
+            "in_links": [
+                "http://www.tamu.edu/about/traditions.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.0008181835091991342
+        },
+        {
+            "url": "http://www.tamu.edu/images/traditions/large/gig_em.jpg",
+            "in_links": [
+                "http://www.tamu.edu/about/traditions.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.0008181835091991342
+        },
+        {
+            "url": "http://www.tamu.edu/images/traditions/large/howdy.jpg",
+            "in_links": [
+                "http://www.tamu.edu/about/traditions.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.0008181835091991342
+        },
+        {
+            "url": "http://www.tamu.edu/images/traditions/large/maroon_out.jpg",
+            "in_links": [
+                "http://www.tamu.edu/about/traditions.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.0008181835091991342
+        },
+        {
+            "url": "http://www.tamu.edu/images/traditions/large/midnight_yell.jpg",
+            "in_links": [
+                "http://www.tamu.edu/about/traditions.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.0008181835091991342
+        },
+        {
+            "url": "http://www.tamu.edu/images/traditions/large/muster.jpg",
+            "in_links": [
+                "http://www.tamu.edu/about/traditions.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.0008181835091991342
+        },
+        {
+            "url": "http://www.tamu.edu/about/traditions.html",
+            "in_links": [
+                "http://www.tamu.edu/about/index.html"
+            ],
+            "out_links": [
+                "http://www.tamu.edu/images/traditions/large/big_event.jpg",
+                "http://www.tamu.edu/images/traditions/large/12th_man.jpg",
+                "http://www.tamu.edu/images/traditions/large/yell_leaders.jpg",
+                "http://www.tamu.edu/images/traditions/large/corps.jpg",
+                "http://www.tamu.edu/images/traditions/large/aggie_ring.jpg",
+                "http://www.tamu.edu/images/traditions/large/band_t.jpg",
+                "http://www.tamu.edu/images/traditions/large/reveille.jpg",
+                "http://www.tamu.edu/images/traditions/large/gig_em.jpg",
+                "http://www.tamu.edu/images/traditions/large/howdy.jpg",
+                "http://www.tamu.edu/images/traditions/large/maroon_out.jpg",
+                "http://www.tamu.edu/images/traditions/large/midnight_yell.jpg",
+                "http://www.tamu.edu/images/traditions/large/muster.jpg"
+            ],
+            "page_rank": 0.000808103354978355
+        },
+        {
+            "url": "http://www.tamu.edu/about/academicUnits.html",
+            "in_links": [
+                "http://www.tamu.edu/about/index.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.000808103354978355
+        },
+        {
+            "url": "http://www.tamu.edu/about/governance.html",
+            "in_links": [
+                "http://www.tamu.edu/about/index.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.000808103354978355
+        },
+        {
+            "url": "http://www.tamu.edu/statements/",
+            "in_links": [
+                "http://www.tamu.edu/about/index.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.000808103354978355
+        },
+        {
+            "url": "http://www.tamu.edu/statements/fileTypes.html",
+            "in_links": [
+                "http://www.tamu.edu/about/index.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.000808103354978355
+        },
+        {
+            "url": "http://www.tamu.edu/about/recognitions.html",
+            "in_links": [
+                "http://www.tamu.edu/about/index.html"
+            ],
+            "out_links": [
+                "http://www.tamu.edu/about/rankings.html"
+            ],
+            "page_rank": 0.000808103354978355
+        },
+        {
+            "url": "http://www.tamu.edu/services/financial.html",
+            "in_links": [
+                "http://www.tamu.edu/admissions/index.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.0011112689393939393
+        },
+        {
+            "url": "http://www.tamu.edu/future-students/new-student-programs.html",
+            "in_links": [
+                "http://www.tamu.edu/admissions/index.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.0011112689393939393
+        },
+        {
+            "url": "http://www.tamu.edu/faculties/directory.html",
+            "in_links": [
+                "http://www.tamu.edu/academics/index.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.0014649621212121213
+        },
+        {
+            "url": "http://www.tamu.edu/about/arts.html",
+            "in_links": [
+                "http://www.tamu.edu/student-life/index.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.0009933712121212121
+        },
+        {
+            "url": "http://www.tamu.edu/academics/",
+            "in_links": [
+                "http://www.tamu.edu/student-life/index.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.0009933712121212121
+        },
+        {
+            "url": "http://www.tamu.edu/student-life/",
+            "in_links": [
+                "http://www.tamu.edu/future-students/index.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.0011112689393939393
+        },
+        {
+            "url": "http://www.tamu.edu/future-students/",
+            "in_links": [
+                "http://www.tamu.edu/parents/index.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.0011112689393939393
+        },
+        {
+            "url": "http://www.tamu.edu/services/",
+            "in_links": [
+                "http://www.tamu.edu/student-life/index.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.0009933712121212121
+        },
+        {
+            "url": "http://www.tamu.edu/admissions/",
+            "in_links": [
+                "http://www.tamu.edu/future-students/index.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.0011112689393939393
+        },
+        {
+            "url": "http://www.tamu.edu/contact-us/emergency-services.html",
+            "in_links": [
+                "http://www.tamu.edu/contact-us/index.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.0014649621212121213
+        },
+        {
+            "url": "http://www.tamu.edu/athletics/",
+            "in_links": [
+                "http://www.tamu.edu/former-students/index.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.0014649621212121213
+        },
+        {
+            "url": "http://www.tamu.edu/emergency/",
+            "in_links": [
+                "http://www.tamu.edu/parents/index.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.0011112689393939393
+        },
+        {
+            "url": "http://www.tamu.edu/research/",
+            "in_links": [
+                "http://www.tamu.edu/faculties/index.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.0014649621212121213
+        },
+        {
+            "url": "http://www.tamu.edu/contact-us/",
+            "in_links": [
+                "http://www.tamu.edu/staff/index.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.0014649621212121213
+        },
+        {
+            "url": "http://www.tamu.edu/emergency/resources/plans.html",
+            "in_links": [
+                "http://www.tamu.edu/emergency/index.html"
+            ],
+            "out_links": [
+                "http://www.tamu.edu/emergency/documents/AnnexH.pdf",
+                "http://www.tamu.edu/emergency/resources/emergency-contact.html",
+                "http://www.tamu.edu/emergency/documents/AnnexA.pdf",
+                "http://www.tamu.edu/emergency/documents/AnnexB.pdf",
+                "http://www.tamu.edu/emergency/documents/AnnexC.pdf",
+                "http://www.tamu.edu/emergency/documents/AnnexE.pdf",
+                "http://www.tamu.edu/emergency/documents/EOP.pdf",
+                "http://www.tamu.edu/emergency/documents/AnnexI.pdf",
+                "http://www.tamu.edu/emergency/documents/AnnexJ.pdf",
+                "http://www.tamu.edu/emergency/documents/AnnexO.pdf",
+                "http://www.tamu.edu/emergency/documents/AnnexQ.pdf",
+                "http://www.tamu.edu/emergency/documents/AnnexV.pdf"
+            ],
+            "page_rank": 0.0008047348484848484
+        },
+        {
+            "url": "http://www.tamu.edu/emergency/procedures/index.html",
+            "in_links": [
+                "http://www.tamu.edu/emergency/index.html"
+            ],
+            "out_links": [
+                "http://www.tamu.edu/emergency/procedures/hurricane.html",
+                "http://www.tamu.edu/emergency/procedures/shooter.html",
+                "http://www.tamu.edu/emergency/procedures/bomb-threat-campus-wide-evacuations.html",
+                "http://www.tamu.edu/emergency/procedures/armed.html",
+                "http://www.tamu.edu/emergency/procedures/package.html",
+                "http://www.tamu.edu/emergency/procedures/lightning.html",
+                "http://www.tamu.edu/emergency/procedures/tornado.html",
+                "http://www.tamu.edu/emergency/procedures/hail.html",
+                "http://www.tamu.edu/emergency/procedures/bomb.html",
+                "http://www.tamu.edu/emergency/procedures/firstAid.html",
+                "http://www.tamu.edu/emergency/procedures/poison.html",
+                "http://www.tamu.edu/emergency/procedures/illness.html",
+                "http://www.tamu.edu/emergency/procedures/radiation.html",
+                "http://www.tamu.edu/emergency/procedures/chemical.html",
+                "http://www.tamu.edu/emergency/procedures/evacuation.html",
+                "http://www.tamu.edu/emergency/procedures/fireProcedures.html",
+                "http://www.tamu.edu/emergency/procedures/gas.html"
+            ],
+            "page_rank": 0.0008047348484848484
+        },
+        {
+            "url": "http://www.tamu.edu/emergency/communications/index.html",
+            "in_links": [
+                "http://www.tamu.edu/emergency/index.html"
+            ],
+            "out_links": [
+                "http://www.tamu.edu/emergency/communications/outlets.html"
+            ],
+            "page_rank": 0.0008047348484848484
+        },
+        {
+            "url": "http://www.tamu.edu/emergency/resources/training-opportunities.html",
+            "in_links": [
+                "http://www.tamu.edu/emergency/index.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.0008047348484848484
+        },
+        {
+            "url": "http://www.tamu.edu/emergency/resources/index.html",
+            "in_links": [
+                "http://www.tamu.edu/emergency/index.html"
+            ],
+            "out_links": [
+                "http://www.tamu.edu/emergency/resources/disaster-guides.html",
+                "http://www.tamu.edu/emergency/documents/12thManEmergencyPlaybook.pdf",
+                "http://www.tamu.edu/emergency/documents/12thManEmergencyPlaybook-Spanish.pdf",
+                "http://www.tamu.edu/emergency/documents/whatShouldYouDo.pdf"
+            ],
+            "page_rank": 0.0008047348484848484
+        },
+        {
+            "url": "http://www.tamu.edu/emergency/resources/frequently-asked-questions-faqs.html",
+            "in_links": [
+                "http://www.tamu.edu/emergency/index.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.0008047348484848484
+        },
+        {
+            "url": "http://www.tamu.edu/emergency/resources/faculty.html",
+            "in_links": [
+                "http://www.tamu.edu/emergency/index.html"
+            ],
+            "out_links": [
+                "http://www.tamu.edu/emergency/communications/codeMaroon.html"
+            ],
+            "page_rank": 0.0008047348484848484
+        },
+        {
+            "url": "http://www.tamu.edu/emergency/resources/students.html",
+            "in_links": [
+                "http://www.tamu.edu/emergency/index.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.0008047348484848484
+        },
+        {
+            "url": "http://www.tamu.edu/emergency/resources/visitors.html",
+            "in_links": [
+                "http://www.tamu.edu/emergency/index.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.0008047348484848484
+        },
+        {
+            "url": "http://www.tamu.edu/emergency/resources/links.html",
+            "in_links": [
+                "http://www.tamu.edu/emergency/index.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.0008047348484848484
+        },
+        {
+            "url": "http://www.tamu.edu/emergency/resources/external-links.html",
+            "in_links": [
+                "http://www.tamu.edu/emergency/index.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.0008047348484848484
+        },
+        {
+            "url": "http://www.tamu.edu/emergency/procedures/severeWeather.html",
+            "in_links": [
+                "http://www.tamu.edu/emergency/index.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.0008047348484848484
+        },
+        {
+            "url": "http://www.tamu.edu/emergency/procedures/medical.html",
+            "in_links": [
+                "http://www.tamu.edu/emergency/index.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.0008047348484848484
+        },
+        {
+            "url": "http://www.tamu.edu/emergency/procedures/fire.html",
+            "in_links": [
+                "http://www.tamu.edu/emergency/index.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.0008047348484848484
+        },
+        {
+            "url": "http://www.tamu.edu/emergency/procedures/personalSafety.html",
+            "in_links": [
+                "http://www.tamu.edu/emergency/index.html"
+            ],
+            "out_links": [
+                "http://www.tamu.edu/emergency/procedures/safetySupport.html"
+            ],
+            "page_rank": 0.0008047348484848484
+        },
+        {
+            "url": "http://www.tamu.edu/statements/compactWithTexans.html",
+            "in_links": [
+                "http://www.tamu.edu/statements/index.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.0009933712121212121
+        },
+        {
+            "url": "http://www.tamu.edu/statements/privacy.html",
+            "in_links": [
+                "http://www.tamu.edu/statements/index.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.0009933712121212121
+        },
+        {
+            "url": "http://www.tamu.edu/statements/linking.html",
+            "in_links": [
+                "http://www.tamu.edu/statements/index.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.0009933712121212121
+        },
+        {
+            "url": "http://www.tamu.edu/about/facts/index.html",
+            "in_links": [
+                "http://www.tamu.edu/about/facts/history.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.001484868777056277
+        },
+        {
+            "url": "http://www.tamu.edu/about/facts/athletics.html",
+            "in_links": [
+                "http://www.tamu.edu/about/facts/"
+            ],
+            "out_links": [],
+            "page_rank": 0.0008303050595238095
+        },
+        {
+            "url": "http://www.tamu.edu/about/facts/community.html",
+            "in_links": [
+                "http://www.tamu.edu/about/facts/"
+            ],
+            "out_links": [],
+            "page_rank": 0.0008303050595238095
+        },
+        {
+            "url": "http://www.tamu.edu/about/facts/academics.html",
+            "in_links": [
+                "http://www.tamu.edu/about/facts/"
+            ],
+            "out_links": [],
+            "page_rank": 0.0008303050595238095
+        },
+        {
+            "url": "http://www.tamu.edu/about/facts/faculty.html",
+            "in_links": [
+                "http://www.tamu.edu/about/facts/"
+            ],
+            "out_links": [],
+            "page_rank": 0.0008303050595238095
+        },
+        {
+            "url": "http://www.tamu.edu/emergency/documents/EOP.pdf",
+            "in_links": [
+                "http://www.tamu.edu/emergency/resources/plans.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.0008179308712121212
+        },
+        {
+            "url": "http://www.tamu.edu/about/facts/graduateStudies.html",
+            "in_links": [
+                "http://www.tamu.edu/about/facts/"
+            ],
+            "out_links": [],
+            "page_rank": 0.0008303050595238095
+        },
+        {
+            "url": "http://www.tamu.edu/about/facts/international.html",
+            "in_links": [
+                "http://www.tamu.edu/about/facts/"
+            ],
+            "out_links": [
+                "http://www.tamu.edu/international/"
+            ],
+            "page_rank": 0.0008303050595238095
+        },
+        {
+            "url": "http://www.tamu.edu/about/facts/research.html",
+            "in_links": [
+                "http://www.tamu.edu/about/facts/"
+            ],
+            "out_links": [],
+            "page_rank": 0.0008303050595238095
+        },
+        {
+            "url": "http://www.tamu.edu/about/facts/resources.html",
+            "in_links": [
+                "http://www.tamu.edu/about/facts/"
+            ],
+            "out_links": [],
+            "page_rank": 0.0008303050595238095
+        },
+        {
+            "url": "http://www.tamu.edu/about/facts/students.html",
+            "in_links": [
+                "http://www.tamu.edu/about/facts/"
+            ],
+            "out_links": [],
+            "page_rank": 0.0008303050595238095
+        },
+        {
+            "url": "http://www.tamu.edu/emergency/documents/AnnexB.pdf",
+            "in_links": [
+                "http://www.tamu.edu/emergency/resources/plans.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.0008179308712121212
+        },
+        {
+            "url": "http://www.tamu.edu/about/facts/traditions.html",
+            "in_links": [
+                "http://www.tamu.edu/about/facts/"
+            ],
+            "out_links": [],
+            "page_rank": 0.0008303050595238095
+        },
+        {
+            "url": "http://www.tamu.edu/emergency/resources/emergency-contact.html",
+            "in_links": [
+                "http://www.tamu.edu/emergency/resources/plans.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.0008179308712121212
+        },
+        {
+            "url": "http://www.tamu.edu/about/rankings.html",
+            "in_links": [
+                "http://www.tamu.edu/about/recognitions.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.001484868777056277
+        },
+        {
+            "url": "http://www.tamu.edu/emergency/documents/AnnexA.pdf",
+            "in_links": [
+                "http://www.tamu.edu/emergency/resources/plans.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.0008179308712121212
+        },
+        {
+            "url": "http://www.tamu.edu/emergency/documents/AnnexI.pdf",
+            "in_links": [
+                "http://www.tamu.edu/emergency/resources/plans.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.0008179308712121212
+        },
+        {
+            "url": "http://www.tamu.edu/emergency/documents/AnnexJ.pdf",
+            "in_links": [
+                "http://www.tamu.edu/emergency/resources/plans.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.0008179308712121212
+        },
+        {
+            "url": "http://www.tamu.edu/emergency/documents/AnnexE.pdf",
+            "in_links": [
+                "http://www.tamu.edu/emergency/resources/plans.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.0008179308712121212
+        },
+        {
+            "url": "http://www.tamu.edu/emergency/documents/AnnexH.pdf",
+            "in_links": [
+                "http://www.tamu.edu/emergency/resources/plans.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.0008179308712121212
+        },
+        {
+            "url": "http://www.tamu.edu/emergency/procedures/shooter.html",
+            "in_links": [
+                "http://www.tamu.edu/emergency/procedures/index.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.000800179367201426
+        },
+        {
+            "url": "http://www.tamu.edu/emergency/documents/AnnexQ.pdf",
+            "in_links": [
+                "http://www.tamu.edu/emergency/resources/plans.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.0008179308712121212
+        },
+        {
+            "url": "http://www.tamu.edu/emergency/documents/AnnexO.pdf",
+            "in_links": [
+                "http://www.tamu.edu/emergency/resources/plans.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.0008179308712121212
+        },
+        {
+            "url": "http://www.tamu.edu/emergency/procedures/bomb.html",
+            "in_links": [
+                "http://www.tamu.edu/emergency/procedures/index.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.000800179367201426
+        },
+        {
+            "url": "http://www.tamu.edu/emergency/documents/AnnexV.pdf",
+            "in_links": [
+                "http://www.tamu.edu/emergency/resources/plans.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.0008179308712121212
+        },
+        {
+            "url": "http://www.tamu.edu/emergency/procedures/bomb-threat-campus-wide-evacuations.html",
+            "in_links": [
+                "http://www.tamu.edu/emergency/procedures/index.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.000800179367201426
+        },
+        {
+            "url": "http://www.tamu.edu/emergency/procedures/armed.html",
+            "in_links": [
+                "http://www.tamu.edu/emergency/procedures/index.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.000800179367201426
+        },
+        {
+            "url": "http://www.tamu.edu/emergency/procedures/package.html",
+            "in_links": [
+                "http://www.tamu.edu/emergency/procedures/index.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.000800179367201426
+        },
+        {
+            "url": "http://www.tamu.edu/emergency/documents/AnnexC.pdf",
+            "in_links": [
+                "http://www.tamu.edu/emergency/resources/plans.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.0008179308712121212
+        },
+        {
+            "url": "http://www.tamu.edu/emergency/procedures/lightning.html",
+            "in_links": [
+                "http://www.tamu.edu/emergency/procedures/index.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.000800179367201426
+        },
+        {
+            "url": "http://www.tamu.edu/emergency/procedures/tornado.html",
+            "in_links": [
+                "http://www.tamu.edu/emergency/procedures/index.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.000800179367201426
+        },
+        {
+            "url": "http://www.tamu.edu/emergency/procedures/hail.html",
+            "in_links": [
+                "http://www.tamu.edu/emergency/procedures/index.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.000800179367201426
+        },
+        {
+            "url": "http://www.tamu.edu/emergency/procedures/hurricane.html",
+            "in_links": [
+                "http://www.tamu.edu/emergency/procedures/index.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.000800179367201426
+        },
+        {
+            "url": "http://www.tamu.edu/emergency/procedures/firstAid.html",
+            "in_links": [
+                "http://www.tamu.edu/emergency/procedures/index.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.000800179367201426
+        },
+        {
+            "url": "http://www.tamu.edu/emergency/procedures/poison.html",
+            "in_links": [
+                "http://www.tamu.edu/emergency/procedures/index.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.000800179367201426
+        },
+        {
+            "url": "http://www.tamu.edu/emergency/procedures/illness.html",
+            "in_links": [
+                "http://www.tamu.edu/emergency/procedures/index.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.000800179367201426
+        },
+        {
+            "url": "http://www.tamu.edu/emergency/procedures/radiation.html",
+            "in_links": [
+                "http://www.tamu.edu/emergency/procedures/index.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.000800179367201426
+        },
+        {
+            "url": "http://www.tamu.edu/emergency/procedures/chemical.html",
+            "in_links": [
+                "http://www.tamu.edu/emergency/procedures/index.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.000800179367201426
+        },
+        {
+            "url": "http://www.tamu.edu/emergency/procedures/evacuation.html",
+            "in_links": [
+                "http://www.tamu.edu/emergency/procedures/index.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.000800179367201426
+        },
+        {
+            "url": "http://www.tamu.edu/emergency/procedures/fireProcedures.html",
+            "in_links": [
+                "http://www.tamu.edu/emergency/procedures/index.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.000800179367201426
+        },
+        {
+            "url": "http://www.tamu.edu/emergency/resources/disaster-guides.html",
+            "in_links": [
+                "http://www.tamu.edu/emergency/resources/index.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.0009386410984848485
+        },
+        {
+            "url": "http://www.tamu.edu/emergency/procedures/gas.html",
+            "in_links": [
+                "http://www.tamu.edu/emergency/procedures/index.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.000800179367201426
+        },
+        {
+            "url": "http://www.tamu.edu/emergency/communications/outlets.html",
+            "in_links": [
+                "http://www.tamu.edu/emergency/communications/index.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.0014818371212121212
+        },
+        {
+            "url": "http://www.tamu.edu/emergency/documents/whatShouldYouDo.pdf",
+            "in_links": [
+                "http://www.tamu.edu/emergency/resources/index.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.0009386410984848485
+        },
+        {
+            "url": "http://www.tamu.edu/emergency/procedures/safetySupport.html",
+            "in_links": [
+                "http://www.tamu.edu/emergency/procedures/personalSafety.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.0014818371212121212
+        },
+        {
+            "url": "http://www.tamu.edu/emergency/communications/codeMaroon.html",
+            "in_links": [
+                "http://www.tamu.edu/emergency/resources/faculty.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.0014818371212121212
+        },
+        {
+            "url": "http://www.tamu.edu/international/",
+            "in_links": [
+                "http://www.tamu.edu/about/facts/international.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.0015048503111471862
+        },
+        {
+            "url": "http://www.tamu.edu/emergency/documents/12thManEmergencyPlaybook.pdf",
+            "in_links": [
+                "http://www.tamu.edu/emergency/resources/index.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.0009386410984848485
+        },
+        {
+            "url": "http://www.tamu.edu/emergency/documents/12thManEmergencyPlaybook-Spanish.pdf",
+            "in_links": [
+                "http://www.tamu.edu/emergency/resources/index.html"
+            ],
+            "out_links": [],
+            "page_rank": 0.0009386410984848485
+        }
+    ]
+}
