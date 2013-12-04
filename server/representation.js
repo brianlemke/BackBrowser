@@ -99,6 +99,8 @@ Domain.prototype.populateBackLinks = function() {
             var ref_page = this.getPage(page.out_links[j]);
             if (ref_page == null) {
                 this.log("Encountered link from " + page.url + " -> " + page.out_links[j] + " (unknown)");
+                page.out_links.splice(j, 1);
+                j--;
             }
             else {
                 ref_page.addInLink(page.url);
