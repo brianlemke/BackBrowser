@@ -12,6 +12,8 @@ var count=0;
 var in_links=[];
 var out_links=[];
 var result;
+var x=0;
+var y=0;
 
 var Backbrowser = {
 
@@ -152,8 +154,8 @@ var Backbrowser = {
             var a = document.createElement('div'); /** create the structure for accordion for the first reading of in links*/
             a.className='acord';
             document.body.appendChild(a);     /**add it to the html */
-
-            for(var i=0;i<in_links.length;i++)   {                /** test read 2 links in */
+            //alert(in_links.length.toString());
+            for(var i=x;i<Math.min(x+5,in_links.length);i++)   {                /** test read 2 links in */
 
             var b = document.createElement('h3');  /** add header*/
             var c=  document.createElement('a');    /** create anchor  */
@@ -183,8 +185,8 @@ var Backbrowser = {
             var g = document.createElement('div'); /** create the structure for accordion for the first reading of in links*/
             g.className='acord';
             document.body.appendChild(g);     /**add it to the html */
-
-            for(var i=0;i<out_links.length;i++)   {                /** test read 2 links in */
+            //alert(out_links.length.toString());
+            for(var i=y;i<Math.min(y+5,out_links.length);i++)   {                /** test read 2 links in */
 
             var e = document.createElement('h3');  /** add header*/
             var f=  document.createElement('a');    /** create anchor  */
@@ -204,6 +206,29 @@ var Backbrowser = {
 
 
 
+            }
+            $('<br/>').appendTo(document.body);
+
+
+            if(((y+5)<out_links.length&&out_links.length>5) || ((x+5)<in_links.length&&in_links.length>5)){
+                //alert(y.toString());
+                //alert(x.toString());
+                $('<button/>', {
+                    text: "next",
+                    id: 'next',
+
+                    click: function () {  if((y+5)<out_links.length&&out_links.length>5)  y=y+5; if ((x+5)<in_links.length&&in_links.length>5) x=x+5; document.body.innerHTML='';Backbrowser.showLinks();}
+                }).css({'float':'right','background-color':'#0000FF','-moz-border-radius':'28px','-webkit-border-radius':'28px','border-radius':'28px','border':'1px solid #18ab29','display':'inline-block','cursor':'pointer','color':'#ffffff','font-family':'arial','font-size':'17px','padding':'16 px 31 px','text-decoration':'none','text-shadow':'0px 1 px 0 px #2f6627'}).hover(function(){$(this).css('background-color', '#0066FF');},function(){$(this).css('background-color', '#0000FF');}).appendTo(document.body);
+            }
+            if(((y-5)>=0&&out_links.length>5) || ((x-5)>=0&&in_links.length>5)){
+                //alert(y.toString());
+                //alert(x.toString());
+                $('<button/>', {
+                    text: "previous",
+                    id: 'previous',
+
+                    click: function () {  if((y-5)>=0&&out_links.length>5)  y=y-5; if ((x-5)>=0&&in_links.length>5) x=x-5; document.body.innerHTML='';Backbrowser.showLinks();}
+                }).css({'float':'left','background-color':'#0000FF','-moz-border-radius':'28px','-webkit-border-radius':'28px','border-radius':'28px','border':'1px solid #18ab29','display':'inline-block','cursor':'pointer','color':'#ffffff','font-family':'arial','font-size':'17px','padding':'16 px 31 px','text-decoration':'none','text-shadow':'0px 1 px 0 px #2f6627'}).hover(function(){$(this).css('background-color', '#0066FF');},function(){$(this).css('background-color', '#0000FF');}).appendTo(document.body);
             }
 
             var js = document.createElement("script");          /**dynamically calls the accordion script*/
@@ -237,6 +262,12 @@ var Backbrowser = {
                         //}
                 //}
             });
+            $('.acord h3 a').hover( function(){
+                    $(this).css('background-color', '#0066FF');
+                },
+                function(){
+                    $(this).css('background-color', '#0000FF');
+                });
 
             $('.acord h3 a').bind('click', function (e) {           /**bind clicks to the links*/
                 // bind to the the header / anchor clicks
