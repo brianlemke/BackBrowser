@@ -22,36 +22,36 @@ var Backbrowser = {
      * Requests the JSON data from the server
      */
     requestLinks: function() {
-     data=chrome.extension.getBackgroundPage().result;
-     $.each(data, function( key, val ) {
+        data=chrome.extension.getBackgroundPage().result;
+        $.each(data, function( key, val ) {
 
-        if(key=="in_links"&&val!='')
-              {
-                 $.each(val, function( key, val ){
-                     $.each(val,function(key,val){
+            if(key=="in_links"&&val!='')
+            {
+                $.each(val, function( key, val ){
+                    $.each(val,function(key,val){
                         if(key=="url"){
-                             in_links.push(val);
-                             }
-                                                });
-                            });
-               }
+                            in_links.push(val);
+                        }
+                    });
+                });
+            }
 
-        if(key=="out_links"&&val!=''){
-                  $.each(val, function( key, val ){
-                      $.each(val,function(key,val){
-                          if(key=="url"){
-                               out_links.push(val);
-
-                                    }
-                                });
-                            });
-
+            if(key=="out_links"&&val!=''){
+                $.each(val, function( key, val ){
+                    $.each(val,function(key,val){
+                        if(key=="url"){
+                            out_links.push(val);
 
                         }
+                    });
+                });
+
+
+            }
 
 
 
-         });
+        });
 
         this.showLinks()
     },
@@ -96,12 +96,12 @@ var Backbrowser = {
 
 
         $('.acord .acord h3').bind('click', function (e) {         /**bind clicks to the headers*/
-        // bind to the the header / anchor clicks
+            // bind to the the header / anchor clicks
         e.stopPropagation();
 
-        var active =$(".acord").accordion("option","active");  /**get the active panel index*/
-        // alert(active);
-        var header;
+            var active =$(".acord").accordion("option","active");  /**get the active panel index*/
+            // alert(active);
+            var header;
 
             switch(active)                                       /**compare values of index*/
             {
@@ -176,6 +176,31 @@ var Backbrowser = {
 
             }
 
+            $('<br/>').appendTo(document.body);
+
+
+            if(((x+5)<in_links.length&&in_links.length>5)){
+                //alert(y.toString());
+                //alert(x.toString());
+                $('<button/>', {
+                    text: "next",
+                    id: 'in_next',
+
+                    click: function () {  if ((x+5)<in_links.length&&in_links.length>5) x=x+5; document.body.innerHTML='';Backbrowser.showLinks();}
+                }).css({'float':'right','background-color':'#0000FF','-moz-border-radius':'28px','-webkit-border-radius':'28px','border-radius':'28px','border':'1px solid #18ab29','display':'inline-block','cursor':'pointer','color':'#ffffff','font-family':'arial','font-size':'17px','padding':'16 px 31 px','text-decoration':'none','text-shadow':'0px 1 px 0 px #2f6627'}).hover(function(){$(this).css('background-color', '#0066FF');},function(){$(this).css('background-color', '#0000FF');}).appendTo(document.body);
+            }
+            if(((x-5)>=0&&in_links.length>5)){
+                //alert(y.toString());
+                //alert(x.toString());
+                $('<button/>', {
+                    text: "previous",
+                    id: 'in_previous',
+
+                    click: function () {  if((x-5)>=0&&in_links.length>5)  x=x-5;  document.body.innerHTML='';Backbrowser.showLinks();}
+                }).css({'float':'left','background-color':'#0000FF','-moz-border-radius':'28px','-webkit-border-radius':'28px','border-radius':'28px','border':'1px solid #18ab29','display':'inline-block','cursor':'pointer','color':'#ffffff','font-family':'arial','font-size':'17px','padding':'16 px 31 px','text-decoration':'none','text-shadow':'0px 1 px 0 px #2f6627'}).hover(function(){$(this).css('background-color', '#0066FF');},function(){$(this).css('background-color', '#0000FF');}).appendTo(document.body);
+            }
+
+            $('<br/>').appendTo(document.body);
 
             var outlinkheader = document.createElement('h2'); /** create the header for the initial reading in of in links*/
             var outlinkheaderText = document.createTextNode("Out links");//create the definition header text node.
@@ -210,24 +235,24 @@ var Backbrowser = {
             $('<br/>').appendTo(document.body);
 
 
-            if(((y+5)<out_links.length&&out_links.length>5) || ((x+5)<in_links.length&&in_links.length>5)){
+            if(((y+5)<out_links.length&&out_links.length>5) ){
                 //alert(y.toString());
                 //alert(x.toString());
                 $('<button/>', {
                     text: "next",
-                    id: 'next',
+                    id: 'out_next',
 
-                    click: function () {  if((y+5)<out_links.length&&out_links.length>5)  y=y+5; if ((x+5)<in_links.length&&in_links.length>5) x=x+5; document.body.innerHTML='';Backbrowser.showLinks();}
+                    click: function () {  if((y+5)<out_links.length&&out_links.length>5)  y=y+5; document.body.innerHTML='';Backbrowser.showLinks();}
                 }).css({'float':'right','background-color':'#0000FF','-moz-border-radius':'28px','-webkit-border-radius':'28px','border-radius':'28px','border':'1px solid #18ab29','display':'inline-block','cursor':'pointer','color':'#ffffff','font-family':'arial','font-size':'17px','padding':'16 px 31 px','text-decoration':'none','text-shadow':'0px 1 px 0 px #2f6627'}).hover(function(){$(this).css('background-color', '#0066FF');},function(){$(this).css('background-color', '#0000FF');}).appendTo(document.body);
             }
-            if(((y-5)>=0&&out_links.length>5) || ((x-5)>=0&&in_links.length>5)){
+            if(((y-5)>=0&&out_links.length>5)) {
                 //alert(y.toString());
                 //alert(x.toString());
                 $('<button/>', {
                     text: "previous",
-                    id: 'previous',
+                    id: 'out_previous',
 
-                    click: function () {  if((y-5)>=0&&out_links.length>5)  y=y-5; if ((x-5)>=0&&in_links.length>5) x=x-5; document.body.innerHTML='';Backbrowser.showLinks();}
+                    click: function () {  if((y-5)>=0&&out_links.length>5)  y=y-5;  document.body.innerHTML='';Backbrowser.showLinks();}
                 }).css({'float':'left','background-color':'#0000FF','-moz-border-radius':'28px','-webkit-border-radius':'28px','border-radius':'28px','border':'1px solid #18ab29','display':'inline-block','cursor':'pointer','color':'#ffffff','font-family':'arial','font-size':'17px','padding':'16 px 31 px','text-decoration':'none','text-shadow':'0px 1 px 0 px #2f6627'}).hover(function(){$(this).css('background-color', '#0066FF');},function(){$(this).css('background-color', '#0000FF');}).appendTo(document.body);
             }
 
@@ -239,27 +264,27 @@ var Backbrowser = {
             document.body.appendChild(js);                      /**adds the call to html*/
 
             $('.acord h3').bind('click', function (e) {        /**bind clicks to the headers*/
-            // bind to the the header / anchor clicks
+                // bind to the the header / anchor clicks
             e.stopPropagation();
 
-            //var active =$(".acord").accordion("option","active");  /**get the active panel index*/
-            //    alert(active);
-            //var header;
+                //var active =$(".acord").accordion("option","active");  /**get the active panel index*/
+                //    alert(active);
+                //var header;
 
 
 
-               // switch(active)                                       /**compare values of index*/
+                // switch(active)                                       /**compare values of index*/
                 //{
-                  //  case false:                                      /**if index is false, then send request to server*/
-                   // alert("opening");
-                     //   isthis.showmorelinks(this);
-                      //  break;
-                    //default:
-                      //  var header = $(".acord h3").eq(active);      /**if index is not false, then compare the values of the headers*/
-                       // if(header[0]!==this){                        /**if header is not equal*/
-                        //alert("opening");                       /**send request to server*/
-                        //isthis.showmorelinks(this);
-                        //}
+                //  case false:                                      /**if index is false, then send request to server*/
+                // alert("opening");
+                //   isthis.showmorelinks(this);
+                //  break;
+                //default:
+                //  var header = $(".acord h3").eq(active);      /**if index is not false, then compare the values of the headers*/
+                // if(header[0]!==this){                        /**if header is not equal*/
+                //alert("opening");                       /**send request to server*/
+                //isthis.showmorelinks(this);
+                //}
                 //}
             });
             $('.acord h3 a').hover( function(){
@@ -300,7 +325,7 @@ var Backbrowser = {
 document.addEventListener('DOMContentLoaded', function () {
 
 
-      Backbrowser.requestLinks();  /**request the links */
+    Backbrowser.requestLinks();  /**request the links */
 });
 
 
