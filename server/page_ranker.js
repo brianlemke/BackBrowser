@@ -1,16 +1,18 @@
 exports.rankPages = rankPages;
 
 var teleport = 0.10;
-var iterations = 100;
+var iterations = 20;
 
 function rankPages(domain) {
     log("Starting PageRank for domain " + domain.url);
     assignInitialRanks(domain);
     
     for (var i = 0; i < iterations; i++) {
+        log("Beginning iteration " + (i + 1) + " of " + iterations);
         updateRank(domain);
     }
     
+    log("Sorting page links");
     sortPageLinks(domain);
     
     log("PageRank finished for domain " + domain.url);
