@@ -46,6 +46,8 @@ DomainCrawler.prototype.processPage = function(error, result, $) {
         
         if ($) {
             var self = this;
+            page.title = $("title").text();
+            
             $("a").each(function (index, link) {
                 var linked_url = self.normalizeUrl(link.href);
                 
@@ -79,6 +81,10 @@ DomainCrawler.prototype.processPage = function(error, result, $) {
             });
         }
         
+        if (page.title == "") {
+            page.title = page.url;
+        }
+        
         this.representation.addPage(page);
     }
 };
@@ -99,13 +105,16 @@ DomainCrawler.prototype.start = function(finish_callback) {
         self.log("============================================================");
         
         self.representation.populateBackLinks();
-        Ranker.rankPages(self.representation);
         self.representation.last_crawled = new Date();
-        
         self.representation.dump(function() {
-            if (finish_callback) {
-                finish_callback();
-            }
+            Ranker.rankPages(self.representation);
+            self.representation.last_crawled = new Date();
+        
+            self.representation.dump(function() {
+                if (finish_callback) {
+                    finish_callback();
+                }
+            });
         });
     };
     

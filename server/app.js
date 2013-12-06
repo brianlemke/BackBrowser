@@ -5,8 +5,7 @@ var Representation = require('./representation');
 var crawl_interval = 24 * 60 * 60 * 1000; // in millis
 var initial_domains = ['http://www.tamu.edu',
                        'http://www.clearbrookband.org',
-                       'http://www.cse.tamu.edu',
-                       'http://thehungergames.wikia.com'
+                       'http://www.cse.tamu.edu'
                       ];
 var domains_to_crawl = [];
 

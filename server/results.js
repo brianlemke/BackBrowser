@@ -34,4 +34,5 @@ function PageResult(url, domain) {
 
 function LinkResult(page) {
     this.url = page.url;
+    this.title = page.title;
 }
