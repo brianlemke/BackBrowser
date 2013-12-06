@@ -1,7 +1,7 @@
 exports.rankPages = rankPages;
 
 var teleport = 0.10;
-var iterations = 20;
+var iterations = 100;
 
 function rankPages(domain) {
     log("Starting PageRank for domain " + domain.url);
