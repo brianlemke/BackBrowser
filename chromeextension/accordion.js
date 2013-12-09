@@ -7,7 +7,7 @@
         header: ">h3",
         heightStyle: "content",
         active: false,
-        collapsible: true
+       collapsible: true
     });
 
 
