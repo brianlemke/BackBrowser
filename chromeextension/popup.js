@@ -255,7 +255,8 @@ var Backbrowser = {
 
 document.addEventListener('DOMContentLoaded', function () {
 
-
+    window.innerWidth=800;
+    window.innerHeight=1000;
     Backbrowser.requestLinks();  /**request the links */
 });
 
