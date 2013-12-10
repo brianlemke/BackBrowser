@@ -1,7 +1,7 @@
 {
-  "name": "Page action by URL",
+  "name": "BackBrowser",
   "version": "1.0",
-  "description": "Shows a page action for urls which have the letter 'g' in them.",
+  "description": "Shows the BackBrowser window for crawled sites.",
   "background": { "scripts": ["jquery.min.js","background.js"],"persistent": false },
   "page_action" :
   {
@@ -19,5 +19,5 @@
 
 
   
-  "manifest_version": 2
+  "manifest_version": 3
 }
