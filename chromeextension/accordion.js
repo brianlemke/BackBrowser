@@ -7,6 +7,7 @@
         header: ">h3",
         heightStyle: "content",
         active: false,
+        disabled:true,
        collapsible: true
     });
 

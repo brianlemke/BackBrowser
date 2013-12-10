@@ -85,6 +85,7 @@ var Backbrowser = {
             var a = document.createElement('div'); /** create the structure for accordion for the first reading of in links*/
             a.className='acord';
             a.style.width="790px";
+
             document.body.appendChild(a);     /**add it to the html */
             //alert(in_links.length.toString());
             for(var i=x;i<Math.min(x+5,in_links.length);i++)   {                /** test read 2 links in */
@@ -142,6 +143,7 @@ var Backbrowser = {
             var g = document.createElement('div'); /** create the structure for accordion for the first reading of in links*/
             g.className='acord';
             g.style.width="790px";
+
             document.body.appendChild(g);     /**add it to the html */
             //alert(out_links.length.toString());
             for(var i=y;i<Math.min(y+5,out_links.length);i++)   {                /** test read 2 links in */
